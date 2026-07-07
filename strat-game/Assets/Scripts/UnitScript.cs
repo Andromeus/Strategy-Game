@@ -65,9 +65,9 @@ public class UnitScript : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, target.position, step);
     }
 
-    private void SetTarget()
+    public void SetTarget(Transform newTarget)
     {
-        
+        target = newTarget;
     }
 
 }
